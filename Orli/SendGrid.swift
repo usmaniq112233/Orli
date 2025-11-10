@@ -82,7 +82,7 @@ class SendGridService {
 
         var request = URLRequest(url: sendGridAPIURL)
         request.httpMethod = "POST"
-        request.setValue("Bearer \(sendGridAPIKey)", forHTTPHeaderField: "Authorization")
+        request.setValue("Bearer \(sendGridApiKey)", forHTTPHeaderField: "Authorization")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 
         do {
